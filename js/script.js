@@ -31,8 +31,58 @@ themeButton.addEventListener("click", () => {
 	// Add or remove the dark/light icon & theme
 	document.body.classList.toggle(darkTheme);
 	themeButton.classList.toggle(iconTheme);
-	// Saving the theme & current icon chosen by the user
+	// Saving the theme & current icon chosen by the user to local storage.
 	localStorage.setItem("selected-theme", getCurrentTheme());
 	localStorage.setItem("selected-icon", getCurrentIcon());
 });
-console.log("Theme Setting is Working.");
+
+//  Show/Hide the Menu
+
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
+
+//  Show Menu
+// Validate if the constant exists
+
+if (navToggle) {
+	navToggle.addEventListener("click", () => {
+		navMenu.classList.add("show-menu");
+	});
+}
+
+//  Hide Menu
+if (navClose) {
+	navClose.addEventListener("click", () => {
+		navMenu.classList.remove("show-menu");
+	});
+}
+
+
+
+//  Remove Menu Profile
+const navLink = document.querySelectorAll("nav__link");
+
+function linkAction() {
+	const navMenu = document.getElementById("nav-menu");
+	// when you click on nav__links, we remove the show menu
+	navMenu.classList.remove("show-menu");
+}
+
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+
+// Typewriter Effect
+
+new Typewriter("#typewriter", {
+	strings: [
+		"<span class=\'Typewriter__wrapper\'>Hey I'm <span class=\'typewriter\'><br/>Peter-Jon</span></span>",
+		"<span class=Typewriter__wrapper>I'm a <span class=\'typewriter\'><br/>Web Developer</span></span>",
+		"<span class=Typewriter__wrapper> And I'm a <span class=\'typewriter\'><br/>Quick Learner</span></span>"
+	],
+	autoStart: true,
+	loop: true,
+	cursor: "|"
+});
+
+
