@@ -534,3 +534,29 @@ img {
 	display: flex;
 	justify-content: center;
 }
+
+/* *******************Skills********************** */
+
+/* .skills__container{
+
+} */
+
+.skills__container-card{
+	position: relative;
+	display: -ms-grid;
+	width: auto;
+	height: autopadding-botton: var(--mb-0-75);
+	margin: auto;
+}  
+
+.card__skill{
+
+}
+
+.shadow2{
+
+}
+
+.contentBx{
+
+}
