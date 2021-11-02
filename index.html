@@ -23,6 +23,12 @@
 		<!--Custom CSS-->
 		<link rel="stylesheet" href="./css/style.css" />
 
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -177,11 +183,6 @@
 			</div>
 		</section>
 
-		<!-- Projects -->
-		<section class="projects section" id="projects"></section>
-
-		
-
 		<!-- Meet PJ -->
 		<section class="about section" id="about">
 			<h2 class="section__title">Meet PJ</h2>
@@ -193,10 +194,11 @@
 						Having worked in Multimedia within an Educational setting, I have
 						been engaging technology for the majority of my working life. I
 						particularly enjoyed client's visible pleasure when their video
-						concepts became a reality.</p>
-						<p class="about__description" id="home-about"> I now seek to make the transition to a
-						different sector of the tech space where I can also create
-						value.
+						concepts became a reality.
+					</p>
+					<p class="about__description" id="home-about">
+						I now seek to make the transition to a different sector of the tech
+						space where I can also create value.
 					</p>
 				</div>
 				<div class="about__buttons">
@@ -212,92 +214,192 @@
 			</div>
 		</section>
 
+		<!-- Projects -->
+		<section class="projects section" id="projects">
+			<h2 class="section__title">Projects</h2>
+			<span class="section__subtitle">My Highlights</span>
+
+			<div class="blog-slider">
+				<div class="blog-slider__wrp swiper-wrapper">
+					<!-- For project item 1 -->
+					<div class="blog-slider__item swiper-slide">
+						<div class="blog-slider__img">
+							<img src="" alt="Project item" />
+						</div>
+
+						<div class="blog-slider__content">
+							<span class="blog-slider__code">31 August 2021</span>
+							<div class="blog-slider__title">Jamaican Used Car Sales Aggregator</div>
+							<div class="blog-slider__text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Recusandae voluptate repellendus magni illo ea animi?
+							</div>
+							<a
+								href="#portfolio"
+								class="button blog-slider__button button--flex"
+								>View Me
+								<i class="uil uil-play button__icon"></i>
+							</a>
+						</div>
+					</div>
+				
+					<div class="blog-slider__pagination"></div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Skills & Expericence -->
 		<section class="skills section" id="skills">
 			<h2 class="section__title">Skillset</h2>
 			<span class="section__subtitle">Tech Toolkit</span>
 
+			<div class="skills__container container grid">
+				<div class="row" id="skillset__container">
+					<div class="skills__container-card">
+						<div class="card__skill shadow2">
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/html5-without-wordmark-color.svg"
+									alt="HTML logo"
+								/>
+							</div>
 
-			<div class="skills__container container grid">
-				<div class="row" id="skillset_container">
-					<div class="skills_container-card">
-						<div class="card__skill shadow2">
-							<img src="assets/skill_badges/html5-without-wordmark-color-vector-logo-D33D78488C-seeklogo.com.zip" alt="HTML logo">
-						</div>	
-						<div class="contentBx">
-							<h2>
-								<!--CONTENTS-->
-							</h2>
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									HTML
+								</h5>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="skills__container container grid">
-				<div class="row" id="skillset_container">
-					<div class="skills_container-card">
+					<div class="skills__container-card">
 						<div class="card__skill shadow2">
-							<img src="assets/skill_badges/html5-without-wordmark-color-vector-logo-D33D78488C-seeklogo.com.zip" alt="HTML logo">
-						</div>	
-						<div class="contentBx">
-							<h2>
-								<!--CONTENTS-->
-							</h2>
+							<div class="imgBx">
+								<img src="assets/skill_badges/CSS3_logo.svg" alt="CSS logo" />
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									CSS
+								</h5>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="skills__container container grid">
-				<div class="row" id="skillset_container">
-					<div class="skills_container-card">
+					<div class="skills__container-card">
 						<div class="card__skill shadow2">
-							<img src="assets/skill_badges/html5-without-wordmark-color-vector-logo-D33D78488C-seeklogo.com.zip" alt="HTML logo">
-						</div>	
-						<div class="contentBx">
-							<h2>
-								<!--CONTENTS-->
-							</h2>
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/javascript-seeklogo.com.svg"
+									alt="JavaScript logo"
+								/>
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									JavaScript
+								</h5>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="skills__container container grid">
-				<div class="row" id="skillset_container">
-					<div class="skills_container-card">
+					<div class="skills__container-card">
 						<div class="card__skill shadow2">
-							<img src="assets/skill_badges/html5-without-wordmark-color-vector-logo-D33D78488C-seeklogo.com.zip" alt="HTML logo">
-						</div>	
-						<div class="contentBx">
-							<h2>
-								<!--CONTENTS-->
-							</h2>
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/bootstrap-seeklogo.com.svg"
+									alt="Bootstrap logo"
+								/>
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									Bootstrap
+								</h5>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="skills__container container grid">
-				<div class="row" id="skillset_container">
-					<div class="skills_container-card">
+					<div class="skills__container-card">
 						<div class="card__skill shadow2">
-							<img src="assets/skill_badges/html5-without-wordmark-color-vector-logo-D33D78488C-seeklogo.com.zip" alt="HTML logo">
-						</div>	
-						<div class="contentBx">
-							<h2>
-								<!--CONTENTS-->
-							</h2>
+							<div class="imgBx">
+								<img src="assets/skill_badges/react-2.svg" alt="React logo" />
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									React
+								</h5>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="skills__container container grid">
-				<div class="row" id="skillset_container">
-					<div class="skills_container-card">
+					<div class="skills__container-card">
 						<div class="card__skill shadow2">
-							<img src="assets/skill_badges/html5-without-wordmark-color-vector-logo-D33D78488C-seeklogo.com.zip" alt="HTML logo">
-						</div>	
-						<div class="contentBx">
-							<h2>
-								<!--CONTENTS-->
-							</h2>
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/react-native-seeklogo.com.svg"
+									alt="React Native logo"
+								/>
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									React Native
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="skills__container-card">
+						<div class="card__skill shadow2">
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/node-node-js-seeklogo.com.svg"
+									alt="Node JS logo"
+								/>
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									Node JS
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="skills__container-card">
+						<div class="card__skill shadow2">
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/mongodb-icon-1.svg"
+									alt="MongoDB logo"
+								/>
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									MongoDB
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="skills__container-card">
+						<div class="card__skill shadow2">
+							<div class="imgBx">
+								<img
+									src="assets/skill_badges/adobe-premiere-seeklogo.com.svg"
+									alt="Premiere Pro logo"
+								/>
+							</div>
+
+							<div class="contentBx">
+								<h5>
+									<!--CONTENTS-->
+									Premiere Pro
+								</h5>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -389,7 +491,12 @@
 		<!-- Typrewrite CSS Effect -->
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
+		<!-- Swiper JS  -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		
 		<!-- Custom Script -->
 		<script src="/js/script.js"></script>
+
+		
 	</body>
 </html>
